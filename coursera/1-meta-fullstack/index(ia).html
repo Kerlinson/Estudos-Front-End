@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Módulo 1</title>
+    <style>
+        /* CSS: O Estilo */
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            transition: background 0.5s, color 0.5s; /* Suaviza a troca */
+        }
+
+        /* Classe para o tema claro */
+        .light-mode {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        /* Classe para o tema escuro (padrão) */
+        .dark-mode {
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body class="dark-mode"> <div style="text-align: center;">
+        <h1>Olá, Kerlinho!</h1>
+        <p>Este é o poder do JavaScript.</p>
+        <button id="botaoTrocar">Acender a Luz</button>
+    </div>
+
+    <script>
+        // JAVASCRIPT: O Comportamento (A mágica)
+        
+        // 1. Pega o botão pelo ID (DOM API que você estudou)
+        const botao = document.getElementById('botaoTrocar');
+        
+        // 2. Pega o corpo do site (body)
+        const corpo = document.body;
+
+        // 3. Adiciona um "escutador" de eventos (Event Listener)
+        botao.addEventListener('click', function() {
+            
+            // Troca a classe entre 'dark-mode' e 'light-mode'
+            if (corpo.classList.contains('dark-mode')) {
+                corpo.classList.replace('dark-mode', 'light-mode');
+                botao.textContent = "Apagar a Luz"; // Muda o texto do botão
+                botao.style.backgroundColor = "#333"; // Muda a cor do botão
+            } else {
+                corpo.classList.replace('light-mode', 'dark-mode');
+                botao.textContent = "Acender a Luz";
+                botao.style.backgroundColor = "#007bff";
+            }
+        });
+    </script>
+</body>
+</html>

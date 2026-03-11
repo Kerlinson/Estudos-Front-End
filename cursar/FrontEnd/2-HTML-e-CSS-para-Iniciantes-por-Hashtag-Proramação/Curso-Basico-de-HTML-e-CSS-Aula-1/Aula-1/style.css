@@ -1,0 +1,34 @@
+/* Tags */
+
+img {
+  /* altura */
+  height: 92px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 13px;
+  font-family: arial, sans-serif;
+}
+
+/* Classes */
+
+.icones-produtos {
+  width: 24px;
+  fill: #5f6368;
+}
+
+.botao-entrar {
+  font-family:
+    Google Sans,
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+  font-weight: 500;
+  background-color: #1a73e8;
+  color: #ffff;
+  padding: 10px 30px;
+  border-radius: 4px;
+}

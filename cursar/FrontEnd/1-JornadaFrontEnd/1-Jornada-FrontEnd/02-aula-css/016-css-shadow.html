@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Css Shadow</title>
+    <style>
+      div {
+        padding: 30px;
+        background: pink;
+        font-size: 32px;
+        position: relative; /* Adicionado para o top/bottom funcionarem */
+        transition: all 0.5s; /* Corrigido de % para s */
+      }
+
+      div:hover {
+        top: 5px; /* Deixei apenas o top para empurrar o elemento 5px para baixo */
+        text-shadow: 2px 2px 5px #000;
+        box-shadow: 0 10px 50px #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div>texto 1</div>
+  </body>
+</html>

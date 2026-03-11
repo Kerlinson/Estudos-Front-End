@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Css Posicionamento</title>
+    <style>
+      .container {
+        background: violet;
+        color: #fff;
+        margin: 40px;
+        height: 150px;
+
+        /* Static */
+        position: relative;
+
+        /* position: static; */
+        /* top:20px; */
+        /* left: 20px; */
+        /* z-index: 999; */
+
+        /* position: relative;
+top: 10px;
+left: 20px;
+bottom: 20px;
+right: 50px; */
+      }
+
+      .filho-relative {
+        background: red;
+        position: relative;
+        top: 10px;
+        left: 20px;
+        bottom: 20px;
+        right: 50px;
+
+        width: 120px;
+      }
+
+      .filho-absolute {
+        position: absolute;
+        background: red;
+
+        top: 100px;
+        right: 10;
+      }
+
+.fixed{
+  font-size: 50px;
+  color: #fff;
+  background: red;
+  
+  position: fixed;
+/*   top: 20px;
+ */
+ bottom: 20px;
+right: 30px;
+
+  z-index: 999;
+}
+
+    </style>
+  </head>
+  <body>
+
+<div class="fixed">
+  texto fixed
+</div>
+
+    <div class="container">
+      Texto 1
+
+      <div class="filho-relative">Texto 2</div>
+
+      texto 3
+    </div>
+
+    <div class="container">
+      Texto 1
+
+      <div class="filho-absolute">Texto 2</div>
+
+      texto 3
+    </div>
+
+    <div class="container">
+      Texto 1
+
+      <div class="filho-relative">Texto 2</div>
+
+      texto 3
+    </div>
+
+    <div class="container">
+      Texto 1
+
+      <div class="filho-absolute">Texto 2</div>
+
+      texto 3
+    </div>
+
+        <div class="container">
+      Texto 1
+
+      <div class="filho-relative">Texto 2</div>
+
+      texto 3
+    </div>
+
+    <div class="container">
+      Texto 1
+
+      <div class="filho-absolute">Texto 2</div>
+
+      texto 3
+    </div>
+
+        <div class="container">
+      Texto 1
+
+      <div class="filho-relative">Texto 2</div>
+
+      texto 3
+    </div>
+
+    <div class="container">
+      Texto 1
+
+      <div class="filho-absolute">Texto 2</div>
+
+      texto 3
+    </div>
+
+  </body>
+</html>

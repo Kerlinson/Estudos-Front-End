@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Css Display e visibilidade</title>
+    <style>
+      p {
+        color: red;
+      }
+
+      /*span não vem o display block o p já vem */
+      span {
+        display: block;
+      }
+
+      p.exp-1 {
+        display: block;
+      }
+
+      p.exp-2 {
+        display: inline;
+      }
+
+      p.exp-3 {
+        display: inline-block;
+      }
+.aparecer:hover p.exp-4{
+  display: block;
+}
+      p.exp-4 {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <span> abc </span>
+
+    <!--exemplo 1-->
+
+    <p class="exp-1">Texto</p>
+
+    <!--exemplo 2-->
+
+    <div>
+      texto 2 abc
+      <p class="exp-2">Texto 2</p>
+    </div>
+
+    <!--exemplo 3-->
+
+    <div>
+      <p class="exp-3">Texto de exemplo</p>
+    </div>
+    <!--exemplo 4-->
+<div class="aparecer">
+  aparecer 
+    <p class="exp-4">Texto</p>
+
+
+</div>
+  </body>
+</html>

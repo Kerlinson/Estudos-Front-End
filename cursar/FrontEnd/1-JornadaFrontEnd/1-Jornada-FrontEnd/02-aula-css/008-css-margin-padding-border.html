@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Css margin padding e margin</title>
+    <style>
+      /*
+      Top (Cima) - 12:00
+      Right (Direita) - 03:00
+      Bottom (Baixo) - 06:00
+      Left (Esquerda) - 09:00
+    */
+
+      div {
+        background: red;
+        color: #fff;
+
+        /* Margem (Distância externa - empurra os vizinhos) */
+        margin: 150px 10px 30px 50px;
+
+        /* Padding (Distância interna - engorda a caixa) */
+        padding: 30px 50px 45px 150px;
+
+        /* CORREÇÃO AQUI: Escolha apenas UM estilo (tirei o 'solid') */
+        border-top: 10px dashed indigo;
+        border-right: 20px dashed indigo;
+        border-bottom: 30px dashed indigo;
+        border-left: 40px dashed indigo;
+      }
+    </style>
+  </head>
+  <body>
+    <div>Texto 1</div>
+
+    <hr />
+
+    <div>Texto 2</div>
+  </body>
+</html>
